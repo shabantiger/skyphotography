@@ -280,6 +280,24 @@ function initBookingForm() {
                 // Submit to Formspree
                 await submitToFormspree(data);
                 
+                // Track successful form submission
+                trackEvent('form_submitted', {
+                    form_type: 'booking',
+                    package: data.package,
+                    event_type: data.eventType
+                });
+
+                // Vercel Analytics specific tracking
+                if (typeof window.va !== 'undefined') {
+                    window.va('event', {
+                        name: 'booking_form_submitted',
+                        data: {
+                            package: data.package,
+                            event_type: data.eventType
+                        }
+                    });
+                }
+                
                 // Show success message
                 showNotification('Booking request sent successfully! We\'ll get back to you soon.', 'success');
                 bookingForm.reset();
@@ -529,11 +547,19 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-// ===== ANALYTICS (if needed) =====
+// ===== ANALYTICS =====
 function trackEvent(eventName, eventData = {}) {
-    // Google Analytics or other analytics tracking
+    // Google Analytics tracking
     if (typeof gtag !== 'undefined') {
         gtag('event', eventName, eventData);
+    }
+    
+    // Vercel Analytics tracking
+    if (typeof window.va !== 'undefined') {
+        window.va('event', {
+            name: eventName,
+            data: eventData
+        });
     }
     
     // Custom analytics
