@@ -1,0 +1,29 @@
+{
+  "name": "sky-photography-website",
+  "version": "1.0.0",
+  "description": "Modern photography website for Sky Photo Studio in Wakiso, Uganda",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "serve": "python -m http.server 8000"
+  },
+  "keywords": [
+    "photography",
+    "website",
+    "uganda",
+    "wakiso",
+    "portfolio",
+    "booking"
+  ],
+  "author": "Sky Photo Studio",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/sky-photography-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/sky-photography-website/issues"
+  },
+  "homepage": "https://yourusername.github.io/sky-photography-website"
+}

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Photo Studio - Professional Photography in Wakiso, Uganda</title>
+    <meta name="description" content="Professional photography services in Wakiso, Uganda. Specializing in cultural conceptual, regular photoshoots, and event photography. Book your session today.">
+    <meta name="keywords" content="photography, Uganda, Wakiso, cultural photography, event photography, professional photographer">
+    <meta name="author" content="Sky Photo Studio">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://skyphotostudio.com/">
+    <meta property="og:title" content="Sky Photo Studio - Professional Photography">
+    <meta property="og:description" content="Professional photography services in Wakiso, Uganda">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://skyphotostudio.com/">
+    <meta property="twitter:title" content="Sky Photo Studio - Professional Photography">
+    <meta property="twitter:description" content="Professional photography services in Wakiso, Uganda">
+    <meta property="twitter:image" content="assets/images/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <span class="logo-text">Sky</span>
+                    <span class="logo-accent">Photo Studio</span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#booking" class="nav-link nav-cta">Book Now</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title">
+                    Capture Your <span class="highlight">Perfect Moments</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Professional photography services in Wakiso, Uganda. 
+                    From cultural conceptual shoots to grand events, we bring your vision to life.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#booking" class="btn btn-primary">
+                        <i class="fas fa-calendar-alt"></i>
+                        Book Your Session
+                    </a>
+                    <a href="#gallery" class="btn btn-secondary">
+                        <i class="fas fa-images"></i>
+                        View Gallery
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Photos Delivered</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Portfolio</h2>
+                <p class="section-subtitle">Explore our diverse collection of stunning photography</p>
+            </div>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="cultural">Cultural</button>
+                <button class="filter-btn" data-filter="portrait">Portrait</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+            </div>
+            
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Gallery items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Professional photography packages tailored to your needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3 class="service-title">Cultural Conceptual</h3>
+                    <p class="service-description">Celebrate your heritage with our cultural photography sessions</p>
+                    <div class="service-packages">
+                        <div class="package">
+                            <h4>Basic Package</h4>
+                            <p class="price">85,000 UGX</p>
+                            <ul>
+                                <li>Professional makeup</li>
+                                <li>5 edited photos</li>
+                                <li>2 outfit changes</li>
+                                <li>Basic retouching</li>
+                            </ul>
+                        </div>
+                        <div class="package featured">
+                            <h4>Premium Package</h4>
+                            <p class="price">150,000 UGX</p>
+                            <ul>
+                                <li>Professional makeup</li>
+                                <li>Headwrap styling</li>
+                                <li>3 outfit changes</li>
+                                <li>15 edited photos</li>
+                                <li>Advanced retouching</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="service-title">Regular Photoshoot</h3>
+                    <p class="service-description">Classic portrait sessions for individuals and families</p>
+                    <div class="service-packages">
+                        <div class="package">
+                            <h4>Basic Package</h4>
+                            <p class="price">150,000 UGX</p>
+                            <ul>
+                                <li>1-hour session</li>
+                                <li>10 edited photos</li>
+                                <li>2 locations</li>
+                                <li>Basic retouching</li>
+                            </ul>
+                        </div>
+                        <div class="package featured">
+                            <h4>Premium Package</h4>
+                            <p class="price">250,000 UGX</p>
+                            <ul>
+                                <li>2-hour session</li>
+                                <li>25 edited photos</li>
+                                <li>3 locations</li>
+                                <li>Advanced retouching</li>
+                                <li>Hair & makeup</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-day"></i>
+                    </div>
+                    <h3 class="service-title">Events & Functions</h3>
+                    <p class="service-description">Capture your special moments with professional event coverage</p>
+                    <div class="service-packages">
+                        <div class="package">
+                            <h4>Basic Package</h4>
+                            <p class="price">700,000 UGX</p>
+                            <ul>
+                                <li>Photography only</li>
+                                <li>Full day coverage</li>
+                                <li>100+ edited photos</li>
+                                <li>Online gallery</li>
+                            </ul>
+                        </div>
+                        <div class="package featured">
+                            <h4>Premium Package</h4>
+                            <p class="price">1,500,000 UGX</p>
+                            <ul>
+                                <li>1 Videographer</li>
+                                <li>1 Photographer</li>
+                                <li>Full day coverage</li>
+                                <li>200+ edited photos</li>
+                                <li>Event video</li>
+                            </ul>
+                        </div>
+                        <div class="package">
+                            <h4>VIP Package</h4>
+                            <p class="price">2,500,000 UGX</p>
+                            <ul>
+                                <li>2 Videographers</li>
+                                <li>1 Photographer</li>
+                                <li>Full day coverage</li>
+                                <li>300+ edited photos</li>
+                                <li>Cinematic video</li>
+                                <li>Drone footage</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Sky Photo Studio</h2>
+                    <p class="about-description">
+                        Based in Wakiso, Uganda, Sky Photo Studio has been capturing life's precious moments for over 5 years. 
+                        We specialize in cultural photography, portrait sessions, and event coverage, bringing creativity and 
+                        professionalism to every shoot.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-camera"></i>
+                            <h4>Professional Equipment</h4>
+                            <p>State-of-the-art cameras and lighting</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-palette"></i>
+                            <h4>Creative Vision</h4>
+                            <p>Unique artistic approach to every session</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h4>Personal Touch</h4>
+                            <p>Dedicated to making every client feel special</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Studio Image</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Book Your Session</h2>
+                <p class="section-subtitle">Ready to create beautiful memories? Let's get started!</p>
+            </div>
+            
+            <div class="booking-content">
+                <div class="booking-info">
+                    <h3>Why Choose Sky Photo Studio?</h3>
+                    <ul class="booking-benefits">
+                        <li><i class="fas fa-check"></i> Professional equipment and expertise</li>
+                        <li><i class="fas fa-check"></i> Flexible scheduling options</li>
+                        <li><i class="fas fa-check"></i> Quick turnaround times</li>
+                        <li><i class="fas fa-check"></i> Online gallery delivery</li>
+                        <li><i class="fas fa-check"></i> Satisfaction guaranteed</li>
+                    </ul>
+                    
+                    <div class="contact-info">
+                        <h4>Get in Touch</h4>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>skyphotographyltd@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+256 757 282 316</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Wakiso, Uganda</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="booking-form" id="booking-form" action="https://formspree.io/f/mjkevbae" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="package">Select Package *</label>
+                        <select id="package" name="package" required>
+                            <option value="">Choose a package</option>
+                            <optgroup label="Cultural Conceptual">
+                                <option value="cultural-basic">Cultural - Basic (85,000 UGX)</option>
+                                <option value="cultural-premium">Cultural - Premium (150,000 UGX)</option>
+                            </optgroup>
+                            <optgroup label="Regular Photoshoot">
+                                <option value="regular-basic">Regular - Basic (150,000 UGX)</option>
+                                <option value="regular-premium">Regular - Premium (250,000 UGX)</option>
+                            </optgroup>
+                            <optgroup label="Events & Functions">
+                                <option value="event-basic">Event - Basic (700,000 UGX)</option>
+                                <option value="event-premium">Event - Premium (1,500,000 UGX)</option>
+                                <option value="event-vip">Event - VIP (2,500,000 UGX)</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Preferred Date *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Preferred Time *</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="location">Location/Address</label>
+                        <input type="text" id="location" name="location" placeholder="Where would you like the session?">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Additional Details</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your vision, style preferences, or any special requirements..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Booking Request
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Ready to start your photography journey? Contact us today!</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info-card">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>skyphotographyltd@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone/WhatsApp</h4>
+                            <p>+256 757 282 316</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Wakiso, Uganda</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="https://instagram.com/skyphotography_0" target="_blank" class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://tiktok.com/@skyphotography01" target="_blank" class="social-icon">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://wa.me/256757282316" target="_blank" class="social-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Interactive Map</p>
+                        <small>Wakiso, Uganda</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">Sky</span>
+                        <span class="logo-accent">Photo Studio</span>
+                    </div>
+                    <p>Capturing life's precious moments with creativity and professionalism in Wakiso, Uganda.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Cultural Photography</a></li>
+                        <li><a href="#services">Portrait Sessions</a></li>
+                        <li><a href="#services">Event Coverage</a></li>
+                        <li><a href="#services">Wedding Photography</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#booking">Book Now</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> skyphotographyltd@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +256 757 282 316</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Wakiso, Uganda</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Sky Photo Studio. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://instagram.com/skyphotography_0" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://tiktok.com/@skyphotography01" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://wa.me/256757282316" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" id="lightbox-close">&times;</span>
+            <img class="lightbox-image" id="lightbox-image" src="" alt="">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+            <button class="lightbox-nav lightbox-prev" id="lightbox-prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="lightbox-nav lightbox-next" id="lightbox-next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loading-spinner">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</body>
+</html>
