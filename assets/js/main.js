@@ -72,7 +72,7 @@ function initGallery() {
     const galleryData = [
         {
             id: 1,
-            src: 'assets/gallery/photo1.jpg',
+            src: 'assets/gallery/photo4.jpg',
             alt: 'Cultural Photography',
             category: 'cultural',
             title: 'Traditional Beauty'
@@ -93,7 +93,7 @@ function initGallery() {
         },
         {
             id: 4,
-            src: 'assets/gallery/photo4.jpg',
+            src: 'assets/gallery/photo1.jpg',
             alt: 'Cultural Photography',
             category: 'cultural',
             title: 'Heritage Moments'
