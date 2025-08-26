@@ -27,6 +27,7 @@ A modern, responsive photography website for Sky Photo Studio based in Wakiso, U
 - **SEO Optimized**: Proper meta tags and structured content
 - **Accessibility**: ARIA labels and keyboard navigation support
 - **Cross-browser Compatible**: Works on all modern browsers
+- **Analytics**: Vercel Analytics integration for performance monitoring
 
 ## 📁 Project Structure
 
@@ -72,6 +73,23 @@ php -S localhost:8000
 ```
 
 Then visit `http://localhost:8000` in your browser.
+
+## 🚀 Deployment
+
+### Vercel Deployment
+This project is configured for easy deployment on Vercel:
+
+1. **Push to GitHub**: Upload your code to a GitHub repository
+2. **Connect to Vercel**: Import your repository in Vercel dashboard
+3. **Automatic Deployment**: Vercel will automatically deploy your site
+4. **Analytics**: Vercel Analytics is automatically enabled for performance monitoring
+
+The project includes:
+- `vercel.json` configuration for optimal deployment
+- `@vercel/analytics` package for performance tracking
+- Proper build settings for static site generation
+
+For detailed deployment instructions, see `VERCEL_DEPLOYMENT.md`.
 
 ## 🎯 Key Sections
 

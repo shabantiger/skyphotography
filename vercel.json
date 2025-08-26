@@ -48,8 +48,5 @@
         }
       ]
     }
-  ],
-  "env": {
-    "VERCEL_ANALYTICS_ID": "@vercel-analytics-id"
-  }
+  ]
 }

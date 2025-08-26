@@ -64,18 +64,23 @@ Click "Deploy" and wait for the build to complete.
 - **Privacy**: Configure based on your needs
 
 ### 3.3 Verify Installation
-The analytics script is already included in your `index.html`:
+The analytics script is properly configured in your project:
 ```html
-<script defer src="/_vercel/insights/script.js"></script>
+<script type="module" src="assets/js/analytics.js"></script>
+```
+
+The `assets/js/analytics.js` file contains:
+```javascript
+import { inject } from '@vercel/analytics';
+inject();
 ```
 
 ## 🔧 Step 4: Configure Environment Variables
 
-### 4.1 Add Analytics ID (Optional)
-1. Go to Project Settings → Environment Variables
-2. Add variable:
-   - **Name**: `VERCEL_ANALYTICS_ID`
-   - **Value**: Your analytics ID (if provided by Vercel)
+### 4.1 Analytics Configuration
+No environment variables are required for Vercel Analytics. The `@vercel/analytics` package automatically detects your Vercel deployment and starts tracking.
+
+**Note**: The old `VERCEL_ANALYTICS_ID` environment variable is no longer needed and has been removed from `vercel.json`.
 
 ## 📈 Step 5: Test Analytics
 
