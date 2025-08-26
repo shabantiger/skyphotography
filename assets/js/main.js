@@ -93,7 +93,7 @@ function initGallery() {
         },
         {
             id: 4,
-            src: 'assets/gallery/photo1.jpg',
+            src: 'assets/gallery/photo1.JPG',
             alt: 'Cultural Photography',
             category: 'cultural',
             title: 'Heritage Moments'
